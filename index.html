@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Happy Anniversary 💖</title>
+
+    <style>
+      body {
+        margin: 0;
+        font-family: "Segoe UI", sans-serif;
+        background: linear-gradient(135deg, #ff758c, #ff7eb3);
+        color: white;
+        text-align: center;
+      }
+
+      /* Heading */
+      h1 {
+        margin-top: 30px;
+        font-size: 42px;
+      }
+      .subtitle {
+        font-size: 18px;
+        opacity: 0.9;
+        line-height: 1.6;
+      }
+
+      /* ===== NICKNAME MENU ===== */
+      .nick-section {
+        max-width: 700px;
+        margin: 40px auto;
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.12);
+        border-radius: 22px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+      }
+      .nick-section h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+      }
+      .nick-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+      }
+      .nick-card {
+        background: rgba(255, 255, 255, 0.18);
+        padding: 15px;
+        border-radius: 16px;
+        transition: 0.3s;
+      }
+      .nick-card:hover {
+        transform: scale(1.05);
+        background: rgba(255, 255, 255, 0.28);
+      }
+      .nick-card h3 {
+        margin: 0;
+        font-size: 20px;
+      }
+      .nick-card p {
+        margin-top: 6px;
+        font-size: 14px;
+        opacity: 0.9;
+      }
+
+      /* Menu cards */
+      .menu {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin: 50px 0;
+      }
+      .card {
+        width: 180px;
+        height: 180px;
+        background: rgba(255, 255, 255, 0.18);
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+        transition: 0.3s;
+      }
+      .card:hover {
+        transform: scale(1.06);
+        background: rgba(255, 255, 255, 0.28);
+      }
+      .card span {
+        font-size: 52px;
+      }
+      .card p {
+        margin-top: 10px;
+        font-size: 20px;
+      }
+
+      /* Sections */
+      .section {
+        display: none;
+        max-width: 420px;
+        margin: 30px auto;
+      }
+
+      /* Image Slider */
+      .slider {
+        position: relative;
+      }
+      .slider img {
+        width: 100%;
+        height: 520px;
+        object-fit: cover;
+        border-radius: 22px;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+      }
+      .btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(0, 0, 0, 0.6);
+        border: none;
+        color: white;
+        font-size: 26px;
+        padding: 12px 18px;
+        cursor: pointer;
+        border-radius: 50%;
+      }
+      .prev {
+        left: -20px;
+      }
+      .next {
+        right: -20px;
+      }
+
+      /* Videos */
+      video {
+        width: 100%;
+        margin-bottom: 20px;
+        border-radius: 22px;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+      }
+
+      /* Back button */
+      .back {
+        margin: 25px 0;
+        cursor: pointer;
+        font-size: 18px;
+        opacity: 0.85;
+      }
+      .back:hover {
+        opacity: 1;
+      }
+
+      /* Music button */
+      .music-btn {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background: rgba(0, 0, 0, 0.6);
+        padding: 14px 18px;
+        border-radius: 50%;
+        cursor: pointer;
+        font-size: 22px;
+        color: white;
+        text-align: center;
+      }
+
+      /* Personal message section */
+      .message-section {
+        max-width: 700px;
+        margin: 50px auto;
+        padding: 25px;
+        background: rgba(255, 255, 255, 0.12);
+        border-radius: 20px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+        text-align: left;
+        line-height: 1.7;
+      }
+      .message-section h2 {
+        font-size: 28px;
+        margin-bottom: 15px;
+        text-align: center;
+      }
+      .message-section p {
+        font-size: 16px;
+        margin-bottom: 12px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- ANNIVERSARY TEXT -->
+    <h1>Happy 3 Years of Our Never-Ending Love ❤️</h1>
+    <p style="font-size: 20px; margin-top: 8px; font-weight: 500">
+      Happy 3rd Anniversary, My Love 💕
+    </p>
+    <p class="subtitle">
+      From the first moment to this beautiful journey
+      <br />
+      And still, forever feels too short ♾️
+    </p>
+
+    <!-- NICKNAME MENU -->
+    <div class="nick-section">
+      <h2>Every Name, One Love ❤️</h2>
+      <div class="nick-list">
+        <div class="nick-card">
+          <h3>Shiwani Mor</h3>
+          <p>The name the world knows her by</p>
+        </div>
+        <div class="nick-card">
+          <h3>Bachuuu</h3>
+          <p>My softest love, my comfort</p>
+        </div>
+        <div class="nick-card">
+          <h3>Shivi</h3>
+          <p>Cute, calm, and close to my heart</p>
+        </div>
+        <div class="nick-card">
+          <h3>Mota</h3>
+          <p>My adorable troublemaker</p>
+        </div>
+        <div class="nick-card">
+          <h3>My Forever Person</h3>
+          <p>The one my soul chose</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- MENU -->
+    <div class="menu" id="menu">
+      <div class="card" onclick="openImages()">
+        <span>📸</span>
+        <p>Photos</p>
+      </div>
+      <div class="card" onclick="openVideos()">
+        <span>🎥</span>
+        <p>Videos</p>
+      </div>
+      <div class="card" onclick="openMessage()">
+        <span>💌</span>
+        <p>Our Thoughts</p>
+      </div>
+    </div>
+
+    <!-- IMAGE SECTION -->
+    <div class="section" id="imagesSection">
+      <div class="slider">
+        <button class="btn prev" onclick="prev()">❮</button>
+        <img id="slide" src="images/image1.jpeg" />
+        <button class="btn next" onclick="next()">❯</button>
+      </div>
+      <div class="back" onclick="goBack()">⬅ Back to Memories</div>
+    </div>
+
+    <!-- VIDEO SECTION -->
+    <div class="section" id="videosSection">
+      <video controls src="videos/video1.mp4"></video>
+      <video controls src="videos/video2.mp4"></video>
+      <div class="back" onclick="goBack()">⬅ Back to Memories</div>
+    </div>
+
+    <!-- PERSONAL MESSAGE SECTION -->
+    <div class="section" id="messageSection">
+      <div class="message-section">
+        <h2>Our Heartfelt Thoughts 💌</h2>
+        <p>
+          On this special day, a girl named <strong>Shiwani Mor</strong> became
+          my <strong>Bachuu</strong>, my everything.
+        </p>
+        <p>
+          Thank you, God, for this beautiful gift in my life. May God always
+          keep His blessings on both of us and protect our love forever.
+        </p>
+        <p>
+          May we keep fighting like this, teasing each other, laughing together,
+          and enjoying every little moment.
+        </p>
+        <p>
+          Honestly, whenever my Bachuu — sorry my mota, sorry my hathi — is with
+          me, it feels like nothing in the world is missing.
+        </p>
+        <p>
+          When you are by my side, everything feels complete, like God’s grace
+          is always with us.
+        </p>
+        <p>May God keep showering His blessings on us like this.</p>
+        <p>
+          May I keep giving you new cute names, and may you always remember
+          them.
+        </p>
+        <p>
+          May we keep sitting together, drinking tea, laughing, and making
+          memories.
+        </p>
+        <p>God bless my Bachuu.</p>
+        <p>
+          May you achieve success very soon and always keep taking me shopping
+          😉
+        </p>
+        <p>You are truly the best part of my life, my Bachuu.</p>
+        <p>I love you so much, my Bebu ❤️💫</p>
+      </div>
+      <div class="back" onclick="goBack()">⬅ Back to Memories</div>
+    </div>
+
+    <!-- BACKGROUND MUSIC -->
+    <audio id="bgMusic" loop>
+      <source src="music/love.mpeg" type="audio/mpeg" />
+    </audio>
+    <div class="music-btn" onclick="toggleMusic()">🎵</div>
+
+    <script>
+      const images = [
+        "images/image1.jpeg",
+        "images/image2.jpeg",
+        "images/image3.jpeg",
+        "images/image4.jpeg",
+        "images/image5.jpeg",
+        "images/image6.jpeg",
+        "images/image7.jpeg",
+        "images/image8.jpeg",
+        "images/image9.jpeg",
+        "images/image10.jpeg",
+        "images/image11.jpeg",
+        "images/image12.jpeg",
+        "images/image13.jpeg",
+        "images/image14.jpeg",
+        "images/image15.jpeg",
+        "images/image16.jpeg",
+        "images/image17.jpeg",
+        "images/image18.jpeg",
+        "images/image19.jpeg",
+        "images/image20.jpeg",
+        "images/image21.jpeg",
+        "images/image22.jpeg",
+        "images/image23.jpeg",
+        "images/image24.jpeg",
+        "images/image25.jpeg",
+
+        "images/image27.jpeg",
+        "images/image28.jpeg",
+        "images/image29.jpeg",
+        "images/image30.jpeg",
+      ];
+
+      let index = 0;
+      const slide = document.getElementById("slide");
+
+      function next() {
+        index = (index + 1) % images.length;
+        slide.src = images[index];
+      }
+      function prev() {
+        index = (index - 1 + images.length) % images.length;
+        slide.src = images[index];
+      }
+
+      function openImages() {
+        document.getElementById("menu").style.display = "none";
+        document.getElementById("imagesSection").style.display = "block";
+      }
+      function openVideos() {
+        document.getElementById("menu").style.display = "none";
+        document.getElementById("videosSection").style.display = "block";
+      }
+      function openMessage() {
+        document.getElementById("menu").style.display = "none";
+        document.getElementById("messageSection").style.display = "block";
+      }
+      function goBack() {
+        document.getElementById("menu").style.display = "flex";
+        document.getElementById("imagesSection").style.display = "none";
+        document.getElementById("videosSection").style.display = "none";
+        document.getElementById("messageSection").style.display = "none";
+      }
+
+      // MUSIC CONTROL
+      let music = document.getElementById("bgMusic");
+      let isPlaying = false;
+      function toggleMusic() {
+        if (isPlaying) {
+          music.pause();
+          isPlaying = false;
+        } else {
+          music.play();
+          isPlaying = true;
+        }
+      }
+
+      // Auto-play after first click (browser requirement)
+      document.body.addEventListener(
+        "click",
+        () => {
+          if (!isPlaying) {
+            music.play();
+            isPlaying = true;
+          }
+        },
+        { once: true }
+      );
+    </script>
+  </body>
+</html>
